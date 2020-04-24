@@ -1,0 +1,62 @@
+<view class="swiper-area">
+
+	<view class="swiper-tab">
+		<view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">鸟类</view>
+		<view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">玉米</view>
+		<view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">花卉</view>
+		<view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">乐器</view>
+		<view class="swiper-tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="clickTab">菌类</view>
+	</view>
+	<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+		<swiper-item>
+			<!-- swiper-item设置滚动 -->
+			<scroll-view scroll-x="false" scroll-y="true" enable-flex="true" class="scroll-views">
+				<view class="select-img-area {{item['isSelected']==true?'active-selected':''}}" bindtap="itemSelected" wx:for="{{imgData}}" wx:for-item="item" 
+				wx:key="imgData" data-index="{{index}}" wx:if="{{item['title']=='bird'}}">
+					<image class="swiper-list-img" src="{{item['path']}}"> </image>
+				</view>
+			</scroll-view>
+		</swiper-item>
+
+		<swiper-item>
+			<scroll-view scroll-x="false" scroll-y="true" enable-flex="true" class="scroll-views">
+				<view class="select-img-area {{item['isSelected']==true?'active-selected':''}}" bindtap="itemSelected" wx:for="{{imgData}}" wx:for-item="item" 
+				wx:key="imgData" data-index="{{index}}" wx:if="{{item['title']=='corn'}}">
+					<image class="swiper-list-img" src="{{item['path']}}"> </image>
+				</view>
+			</scroll-view>
+		</swiper-item>
+
+		<swiper-item>
+			<scroll-view scroll-x="false" scroll-y="true" enable-flex="true" class="scroll-views">
+				<view class="select-img-area {{item['isSelected']==true?'active-selected':''}}" bindtap="itemSelected" wx:for="{{imgData}}" wx:for-item="item" 
+				wx:key="imgData" data-index="{{index}}" wx:if="{{item['title']=='flower'}}">
+					<image class="swiper-list-img" src="{{item['path']}}"> </image>
+				</view>
+			</scroll-view>
+		</swiper-item>
+
+		<swiper-item>
+			<scroll-view scroll-x="false" scroll-y="true" enable-flex="true" class="scroll-views">
+				<view class="select-img-area {{item['isSelected']==true?'active-selected':''}}" bindtap="itemSelected" wx:for="{{imgData}}" wx:for-item="item" 
+				wx:key="imgData" data-index="{{index}}" wx:if="{{item['title']=='instruments'}}">
+					<image class="swiper-list-img" src="{{item['path']}}"> </image>
+				</view>
+			</scroll-view>
+		</swiper-item>
+
+		<swiper-item>
+			<scroll-view scroll-x="false" scroll-y="true" enable-flex="true" class="scroll-views">
+				<view class="select-img-area {{item['isSelected']==true?'active-selected':''}}" bindtap="itemSelected" wx:for="{{imgData}}" wx:for-item="item" 
+				wx:key="imgData" data-index="{{index}}" wx:if="{{item['title']=='mushroom'}}">
+					<image class="swiper-list-img" src="{{item['path']}}"> </image>
+				</view>
+			</scroll-view>
+		</swiper-item>
+	</swiper>
+</view>
+
+<!-- <view class="menu" bindtap="showMenu">
+	<image class="menu-image" src="/images/more/start.png"></image>
+</view> -->
+<canvas id="test-canvas" canvas-id="test-canvas" bindtap="showMenu"></canvas>

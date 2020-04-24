@@ -1,0 +1,24 @@
+<view class="weui-uploader">
+  <view class="img-v weui-uploader__bd">
+  <!--预览图-->
+    <view class='pic' wx:for="{{imgTempPath}}" wx:for-item="item" wx:key="*this">
+        <image class='weui-uploader__img'
+                src="{{item}}"
+                data-index="{{index}}" mode="aspectFill" 
+                bindtap="previewImg" >
+                  <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+        </image>
+    </view>
+     
+      <!-- 上传图片 -->
+      <view class="weui-uploader__input-box pic" bindtap="chooseImg"> </view>
+  </view>
+  <view class="btn">
+    <view class="upload-img-btn">
+      <button class="upload-img-btn" bindtap="chooseImage" type='primary'>选择</button>
+    </view>
+    <view class="upload-img-btn2">
+      <button class="upload-img-btn2 " bindtap="upload" type='primary'>上传</button>
+    </view>
+  </view>
+</view>

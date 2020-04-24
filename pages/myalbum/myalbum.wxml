@@ -1,0 +1,20 @@
+<!--pages/myalbum/myalbum.wxml-->
+<view class="flex">
+	<view class="text animated {{animateType}}" bindanimationend='animateEnd'>炫酷相册</view>
+	
+	<swiper class='lunbo animated {{animateType}}' bindchange="animateStart" 
+	circular="true" autoplay="{{autoplay}}" interval="2000">
+       <swiper-item wx:for="{{imgFile}}" wx:key="myalbum"> <image src='{{item}}'></image> </swiper-item>
+       <swiper-item> <image src='../../images/lunbo/1.jpg'></image></swiper-item>
+       <swiper-item> <image src='../../images/lunbo/2.jpg'></image> </swiper-item>
+    </swiper>
+   
+	
+	<view class="btn">
+    <button bindtap="popChange">{{animateTypeBtnText||'选择特效'}}</button>
+	  <button bindtap="albumStart">播放图集</button>
+  </view>
+	<van-popup show="{{ show }}" bind:close="popChange" round position="bottom">
+		<van-picker columns="{{ columns }}" bind:change="onChange" show-toolbar='{{true}}' title='选择动画' bindconfirm='selectAnimate' bindcancel='popChange' />
+	</van-popup>
+</view>
