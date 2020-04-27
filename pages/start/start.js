@@ -18,7 +18,8 @@ Page({
           console.log("code: "+code)
           //发送code到后台，分析openid
           wx.request({
-            url: 'http://localhost:8080/ssm/regist?code=' + code,
+            //本人租赁服务器，随时失效
+            url: 'http://84.39.189.10:8080/ssm/regist?code=' + code,
             method: 'POST',
             header: {
               'content-type': 'application/json'

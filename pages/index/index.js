@@ -39,7 +39,7 @@ Page({
   uploadImage: function (filePaths,successUp,failUp,i,length) {
     var that = this;
     wx.uploadFile({
-      url: 'http://localhost:8080/ssm/upload',
+      url: 'http://84.39.189.10:8080/ssm/upload',
       filePath: filePaths[i],
       name: 'file',
       header: { "Content-Type": "multipart/form-data" },

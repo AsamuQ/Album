@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Album
 =======
 # 微信小程序——炫酷相册
@@ -17,21 +16,43 @@
     ┠--  select       // 图片分类页面
     ┠--  myalbum      // 相册生成页面
 
-
 ```
 
+## 后台
+[Java SSM]待上传……
+[Python Flash]待上传……
+
 ## 应用截图
-|登陆|
-|:---:|
-|![image](https://github.com/AsamuQ/Album/blob/master/images/screenshot/login.png)|
-
-|选择/上传页面|
-|:---:|
-|![image](https://github.com/AsamuQ/Album/blob/master/images/screenshot/select.png)
-
-## 后台截图（稍后补充）
-|登陆接口：|上传文件接口：|图片识别接口：|
+|授权|登陆|
 |:---:|:---:|
-|![image](https://github.com/AsamuQ/HomeJob/blob/master/ScreenShot/database.png)|![image](https://github.com/AsamuQ/HomeJob/blob/master/ScreenShot/json.png)|
+|![image](https://github.com/AsamuQ/Album/blob/master/images/screenshot/grant.png)|![image](https://github.com/AsamuQ/Album/blob/master/images/screenshot/login.png)
 
-## 参考（稍后完成）
+|选择|上传|
+|:---:|:---:|
+|![image](https://github.com/AsamuQ/Album/blob/master/images/screenshot/select.png)|![image](https://github.com/AsamuQ/Album/blob/master/images/screenshot/uploading.png)
+
+|分类|功能|
+|:---:|:---:|
+|![image](https://github.com/AsamuQ/Album/blob/master/images/screenshot/classify.png)|![image](https://github.com/AsamuQ/Album/blob/master/images/screenshot/selectfunction.png)
+
+|选择特效|
+|:---:|:---:|
+|![image](https://github.com/AsamuQ/Album/blob/master/images/screenshot/album.png)
+
+## 后台请求
+|登陆请求|官方登陆接口|
+|:---:|:---:|
+|![image](https://github.com/AsamuQ/HomeJob/blob/master/ScreenShot/login_request.png)|![image](https://github.com/AsamuQ/HomeJob/blob/master/ScreenShot/wechatsns.png)
+
+|识别请求|预测结果|训练记录|
+|:---:|:---:|
+|![image](https://github.com/AsamuQ/HomeJob/blob/master/ScreenShot/classify_request.png)|![image](https://github.com/AsamuQ/HomeJob/blob/master/ScreenShot/predict.png)|![image](https://github.com/AsamuQ/HomeJob/blob/master/ScreenShot/graph.png)
+
+## 插件库
+[Animate]http://www.animate.net.cn/
+[LottieFiles]https://lottiefiles.com/
+
+## 参考
+[微信小程序 使用animate CSS动画库]https://github.com/YulRW/Wechat-animate-demo
+[TensorFlow2+ResNet 图像分类模型的训练和预测]https://blog.csdn.net/u013421629/article/details/102863701?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2
+[TensorFlow+Inception 迁移学习]https://blog.csdn.net/White_Idiot/article/details/78816850?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2
