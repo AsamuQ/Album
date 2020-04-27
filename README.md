@@ -16,10 +16,10 @@
 ```
 
 ## 后台
->[Java SSM]待上传……  
+>[Java SSM](https://github.com/AsamuQ/Album_ssm)
 >>实现登录/注册、上传文件接口
 
->[Python Flash]待上传……
+>[Python Flask](https://github.com/AsamuQ/Album_tensorflow)
 >>实现图片识别服务
 
 ## 应用截图
@@ -54,8 +54,10 @@
 [LottieFiles]https://lottiefiles.com/
 
 ## 参考
-[微信小程序 使用animate CSS动画库]https://github.com/YulRW/Wechat-animate-demo
+[微信小程序 使用animate CSS动画库](https://github.com/YulRW/Wechat-animate-demo)
 
-[TensorFlow2+ResNet 图像分类模型的训练和预测]https://blog.csdn.net/u013421629/article/details/102863701?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2
 
-[TensorFlow+Inception 迁移学习]https://blog.csdn.net/White_Idiot/article/details/78816850?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2
+[TensorFlow2+ResNet 图像分类模型的训练和预测](https://blog.csdn.net/u013421629/article/details/102863701?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2)
+
+
+[TensorFlow+Inception 迁移学习](https://blog.csdn.net/White_Idiot/article/details/78816850?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2)
